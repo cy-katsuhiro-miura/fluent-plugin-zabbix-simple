@@ -15,7 +15,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 #
-class Fluent::ZabbixSimpleOutput < Fluent::Output
+class Fluent::ZabbixSimpleOutput < Fluent::BufferedOutput
   Fluent::Plugin.register_output('zabbix_simple', self)
 
   def initialize
