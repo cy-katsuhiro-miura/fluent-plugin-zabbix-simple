@@ -15,8 +15,8 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 #
-class Fluent::ZabbixSimpleOutput < Fluent::BufferedOutput
-  Fluent::Plugin.register_output('zabbix_simple', self)
+class Fluent::ZabbixSimpleBufferdOutput < Fluent::BufferedOutput
+  Fluent::Plugin.register_output('zabbix_simple_bufferd', self)
 
   def initialize
     super
